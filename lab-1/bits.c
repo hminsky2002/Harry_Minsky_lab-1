@@ -371,18 +371,14 @@ unsigned float_twice(unsigned uf) {
  *   Rating: 4
  */
 unsigned float_i2f(int x) {
-  // We treat x as an integer
- 
+  // We treat x as an integer 
   //initialize a series of 0 ints as trackers for our while loops
   int y = 0, d = 0, c = 0; 
-
   // our empty variable to be tuned into IEEE formated
   unsigned int r = 0x00000000;
-
   //we account for the arithemetic shift in the case that x is negative
   unsigned int t = x; 
   unsigned f = x;
-
   // Check if MSB x = 1
   if(x >> 31)
     {
